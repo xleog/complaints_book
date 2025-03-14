@@ -1,6 +1,6 @@
 <?= $this->extend('dashboard/template.php'); ?>
 <?= $this->section('titulo'); ?>
-Mantenimiento de Usuarios
+Consultar Incidencia
 <?= $this->endsection() ?>
 
 <?= $this->section('content'); ?>
@@ -10,7 +10,7 @@ Mantenimiento de Usuarios
 			<div class="col-12">
 				<div class="card">
 					<div class="card-header">
-						<h3 class="card-title">Usuarios</h3>
+							<h3 class="card-title">Incidencias</h3>
 						<div class="btn-list ms-auto">
 							<button class="btn btn-primary btn-5 d-none d-sm-inline-block" onclick="abrir_modal();">
 								<!-- Download SVG icon from http://tabler.io/icons/icon/plus -->
@@ -18,7 +18,7 @@ Mantenimiento de Usuarios
 									<path d="M12 5l0 14" />
 									<path d="M5 12l14 0" />
 								</svg>
-								Agregar nuevo Usuario
+								Agregar nuevas Incidencias
 							</button>
 							<a href="#" class="btn btn-primary btn-6 d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
 								<!-- Download SVG icon from http://tabler.io/icons/icon/plus -->
@@ -100,7 +100,7 @@ Mantenimiento de Usuarios
 		</div>
 	</div>
 </div>
-<div class="modal modal-blur fade" tabindex="-1" role="dialog" aria-hidden="true" id="mdlusuarios" name="mdlusuarios">
+<div class="modal modal-blur fade" tabindex="-1" role="dialog" aria-hidden="true" id="mdlincidencias" name="mdlincidencias">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -209,7 +209,7 @@ Mantenimiento de Usuarios
 
 <?= $this->section('scripts'); ?>
 
-<script src="<?= base_url('public/dist/js/paginas/man_usuarios.js') ?>" defer></script>
+<script src="<?= base_url('public/dist/js/paginas/incide_consul.js') ?>" defer></script>
 
 
 <script> const baseURL = "<?= base_url(); ?>"; </script>

@@ -32,6 +32,22 @@ $routes->group('',['filter'=>'AuthFilter'], function($routes){
 $routes->group('conf',['filter'=>'AuthFilter'], function($routes){
 
     $routes->get('mant_usuarios', 'MantUsuariosController::index');
+    $routes->get('mant_empresa', 'MantEmpresaController::index');
+    $routes->get('mant_perfil', 'MantPerfilController::index');
+
+});
+
+$routes->group('incide',['filter'=>'AuthFilter'], function($routes){
+
+    $routes->get('incide_consul', 'IncideConsulController::index');
+    $routes->get('incide_report', 'IncideReportController::index');
+
+});
+
+$routes->group('asig',['filter'=>'AuthFilter'], function($routes){
+
+    $routes->get('asignar_usu', 'AsigUsuController::index');
+    $routes->get('respond_incide', 'RespondIncideController::index');
 
 });
 

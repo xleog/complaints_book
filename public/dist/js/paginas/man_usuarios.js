@@ -1,13 +1,18 @@
 var table='';
 
+function abrir_modal() {
+    $('#lbltitulo').text('Nuevo Usuario');  // Establecer el título correctamente
+    $('#mdlusuarios').modal('show'); // Asegurar que el modal se muestra
+}
+
 $(document).ready(function () {
     carga_usuarios();
 });
 function carga_usuarios() {
     const url = baseURL + 'datatables/dtusuarios';    
-    table = $('#tblrusuarios').DataTable({
+    table = $('#tblusuarios').DataTable({
         "destroy": true,
-        "language": Español,
+        //"language": Español,
         "autoWidth": true,
         "responsive": true,
         "ajax": {

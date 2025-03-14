@@ -33,7 +33,8 @@
 </head>
 
 <body class=" layout-fluid">
-	<script src="./dist/js/demo-theme.min.js?1738096685"></script>
+	<script src="<?= base_url('public/dist/js/demo-theme.min.js') ?>" defer></script>
+
 	<div class="page">
 		<!-- Sidebar -->
 		<?= $this->include('dashboard/aside') ?>
@@ -250,16 +251,21 @@
 		</div>
 	</div>
 	<!-- Libs JS -->
-	<script src="<?= base_url('/dist/libs/apexcharts/dist/apexcharts.min.js?1738096685') ?>" defer></script>
-	<script src="<?= base_url('/dist/libs/jsvectormap/dist/jsvectormap.min.js?1738096685') ?>" defer></script>
+	<script src="<?= base_url('public/dist/libs/apexcharts/dist/apexcharts.min.js') ?>" defer></script>
+
+	<script src="<?= base_url('public/dist/libs/jsvectormap/dist/jsvectormap.min.js') ?>" defer></script>
 	<script src="<?= base_url('public/dist/libs/jsvectormap/dist/maps/world.js?1738096685') ?>" defer></script>
 	<script src="<?= base_url('public/dist/libs/jsvectormap/dist/maps/world-merc.js?1738096685') ?>" defer></script>
 	<!-- Tabler Core -->
-	<script src="<?= base_url('public/dist/js/tabler.min.js?1738096685') ?>" defer></script>
-	<script src="<?= base_url('public/dist/js/demo.min.js?1738096685') ?>" defer></script>
 	<script src="<?= base_url('public/dist/libs/jquery/jquery-3.7.1.min.js') ?>" defer></script>
 
+	<script src="<?= base_url('public/dist/js/tabler.min.js?1738096685') ?>" defer></script>
+	<script src="<?= base_url('public/dist/js/demo.min.js?1738096685') ?>" defer></script>
+	
+
 	<?=$this->renderSection('scripts');?>
+
+	
 </body>
 
 </html>
